@@ -1,0 +1,157 @@
+.auto-play, .game{
+
+}
+.btn-choice{
+  width: 40px;
+  margin-right: 20px;
+}
+
+.set-number{
+    float: left;
+}
+
+/*bubbles*/
+.game {
+  max-height: 350px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 0px;
+  padding: 0px;
+  float: right;
+  width: 400px;
+  margin-right: 150px;
+}
+
+.game-msg{
+  clear: both;
+}
+  
+ .box3 {
+    width: 200px;
+    clear: both;
+    margin: 15px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-weight: 900;
+    font-family: arial;
+    position: relative;
+  }
+  
+  
+  /* speech bubble 13 */
+  
+.sb13:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-right: 15px solid transparent !important;
+    border-bottom: 15px solid transparent;
+    right: -16px;
+    top: 0px;
+  }
+  
+  
+  /* speech bubble 14 */
+  
+.sb14:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 15px solid transparent !important;
+    border-bottom: 15px solid transparent;
+    left: -16px;
+    top: 0px;
+  }
+
+  .client:before{
+    border-left: 15px solid #ffce99;
+    border-right: 15px solid #ffce99;
+    border-top: 15px solid #ffce99;
+  }
+
+  .client{
+    background:  #ffce99;
+    float:right;
+  }
+
+  .opponent:before {
+    border-left: 15px solid #ff9999;
+    border-right: 15px solid #ff9999;
+    border-top: 15px solid #ff9999;
+  }
+  
+  .opponent{
+    background-color:   #ff9999;
+    float: left;
+  }
+  
+  
+  
+  
+  
+  /* youtube link */
+.youtube{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 160px;
+    text-align: center;
+    padding: 15px 10px;
+    background: #bb0000;
+    border-radius: 5px;
+  }
+  
+.youtube a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+  }
+
+  .your-turn-label{
+    margin-right: 15px;
+  }
+
+  .btn-primary.raised {
+    box-shadow: 0 3px 0 0 #007299;
+}
+.btn-primary.raised:active, .btn-primary.raised.active {
+    background: #33a6cc;
+    box-shadow: none;
+    margin-bottom: -3px;
+    margin-top: 3px;
+}
+
+/***********************
+  CUSTON BTN VALUES
+************************/
+
+.action-btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.action-btn:focus, .action-btn:active:focus, .action-btn.active:focus {
+    outline: 0 none;
+}
+
+.action-btn {
+    background: #0099cc;
+    color: #ffffff;
+}
+.action-btn:hover, .action-btn:focus, .action-btn:active, .action-btn.active, .open > .dropdown-toggle.action-btn {
+    background: #33a6cc;
+}
+.action-btn:active, .action-btn.active {
+    background: #007299;
+    box-shadow: none;
+}
+
+

@@ -1,0 +1,30 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div *ngIf="clientId">
+
+    <form class="col-md-9">
+    <label>Your Id is:</label><label class="client-id">{{clientId}}</label> 
+    <button (click)="copyMessage(clientId)" class="col-sm-1 client-color">Copy</button>
+    </form>
+    <br>
+    <div  [hidden]="!globals.isWaiting" class="offset-sm-1" style="text-align: center;">
+        <div class="spinner-border spinner " role="status">
+                <span class="sr-only">Loading...</span>
+        </div>
+        <br>
+        <label style="font-size: 12px;">Waiting for response</label>
+    </div>
+
+    <div *ngIf="globals.error" class="text-danger">{{globals.error}}</div>
+    <br>
+    <br>
+    <play-request *ngIf="condition == 0" [clientId]="clientId">
+    </play-request>
+    <request-approval *ngIf="condition == 1" [clientId]="clientId" (answer)="onAnswer($event)"
+    [applicant]="opponent">
+    </request-approval>
+    <game-process *ngIf="condition == 2" [clientId]="clientId" [numbers]="numbers" 
+    [isInitiator]="isInitiator" [opponent]="opponent" (replay)="onReplay($event)"></game-process>
+</div>
+<div *ngIf="clientId === undefined">
+    Something wrong. Try to refresh the page
+</div>
